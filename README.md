@@ -1,5 +1,5 @@
 
-# ETCX Auto Minter
+WRIS Auto Minter
 
 English and Bahasa Indonesia Tutorial
 

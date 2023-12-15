@@ -1,13 +1,13 @@
 const { Web3 } = require('web3');
 
 // Replace 'YOUR_INFURA_API_KEY' with your Infura API key or provide your own Ethereum Classic node URL
-const web3 = new Web3('https://etc.etcdesktop.com/');
+const web3 = new Web3('https://go.getblock.io/f3f52ae765e4443aae03f50dd270058f');
 
 // Replace 'YOUR_PRIVATE_KEY' with the private key of the account that will mint the tokens
-const account = 'YOUR_PRIVATE_KEY';
+const account = 'YOUR PRIVATE_KEY';
 
 // Replace 'CONTRACT_ADDRESS' with the actual contract address
-const contractAddress = '0xfDCBDad8226604a0101774c3961BBb6A158547Cb';
+const contractAddress = '0x8817943387855b0F99De7091DE9926bD37B0F661';
 
 // Replace 'TOKEN_ABI' with the ABI (Application Binary Interface) of your ERC-20 token contract
 const tokenAbi = [{
@@ -496,17 +496,19 @@ const tokenAbi = [{
         "stateMutability": "nonpayable",
         "type": "function"
     }
-];
+]
+                
+
 
 // Replace 'TO_ADDRESS' with the recipient's address
-const toAddress = 'YOUR_ADDRESS';
+const toAddress = 'YOUR ADDRESS';
 
 // Replace 'TARGET_TOKEN_BALANCE' with the desired token balance to stop the loop
-const targetTokenBalance = 2390000000000000;
+const targetTokenBalance = 23900000000000;
 
 async function claimTokens() {
   // Replace 'AMOUNT_TO_MINT' with the number of tokens to mint in each iteration
-  const amountToMint = 100000000000000;
+  const amountToMint = 1000000000000;
   
 
   web3.eth.getNodeInfo()
